@@ -1,0 +1,99 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header > h1 {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav > ul {
+    display: flex;
+    flex-wrap: wrap;  /* 화면이 줄어들면 자동으로 줄바꿈 됨 */
+    margin: 20px;
+    padding: 10px;
+    list-style: none;
+    justify-content: right;
+}
+
+/* nav > ul > li  -> 부등호의 경우 바로 아래만 확인
+   nav li         -> 공백의 경우 자손 모두 확인*/
+nav li {
+    margin: 5px;
+    padding: 10px;
+    background-color: royalblue;
+    color: white;
+    border-radius: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover, nav li:hover {
+    background-color: brown;
+}
+
+main {
+    width: 60%;
+    background-color: lightblue;
+    margin-left: 20%;
+    padding-top: 50px;
+}
+
+article {
+    padding: 20px;
+}
+
+article p {
+    margin: 20px
+}
+
+section {
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+}
+
+section > div {
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+}
+
+section p {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    border-radius: 50%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer > ul {
+    list-style: none;
+    padding: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        width: 100%;
+        background-color: lightsteelblue;
+        margin-left: 0px;
+        padding-top: 50px;
+    }
+
+    header > h1 {
+        font-size: medium;
+        color: white;
+    }
+  }
