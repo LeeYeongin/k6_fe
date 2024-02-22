@@ -33,10 +33,18 @@ article ul {
     list-style: none;
 }
 
+article a {
+    text-decoration: none;
+}
+
 article li {
-    height: 20px;
+    height: 15px;
     border: 1px dotted grey;
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 15px;
+}
+
+article li:hover {
+    background-color: rgb(240, 188, 170);
 }
