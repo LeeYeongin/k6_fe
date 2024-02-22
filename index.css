@@ -1,0 +1,42 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+main {
+    width: 60%;
+    margin-left: 20%;
+}
+
+header {
+    background-color: black;
+    color: white;
+    height: 100px;
+    padding: 0px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article ul {
+    width: 70%;
+    background-color: beige;
+    margin-top: 20px;
+    list-style: none;
+}
+
+article li {
+    height: 20px;
+    border: 1px dotted grey;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
