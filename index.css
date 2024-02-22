@@ -9,7 +9,7 @@ main {
 }
 
 header {
-    background-color: black;
+    background-color: rgb(110, 109, 109);
     color: white;
     height: 100px;
     padding: 0px 20px;
@@ -48,3 +48,29 @@ article li {
 article li:hover {
     background-color: rgb(240, 188, 170);
 }
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section > h1 {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+section > div {
+    display: flex;
+    width: 80%;
+    
+    justify-content: center;
+    align-items: center;
+    border: 1px dotted gray;
+    padding: 20px;
+    margin: 10px;
+}
+
