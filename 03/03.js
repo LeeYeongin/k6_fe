@@ -19,5 +19,5 @@ function handleClick(n) {
     함수 작성 2: 화살표 함수
 */
 const handleClick = (n) => {
-    document.querySelector("#msgArea").innerHTML = `<h2>버튼 ${n}이 눌러졌습니다.</h2>`;
+    document.querySelector("#msgArea").innerHTML = `<h2>버튼 ${n} 이 눌러졌습니다.</h2>`;
 }
