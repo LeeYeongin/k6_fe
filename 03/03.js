@@ -15,6 +15,7 @@ function handleClick(n) {
 }
 */
 
+// const = 상수, let = 변수
 /*
     함수 작성 2: 화살표 함수
 */
