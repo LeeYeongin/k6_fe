@@ -4,6 +4,7 @@ section > div {
   justify-content: center;
   align-items: center;
 }
+
 .row {
   display: flex;
   justify-content: center;
