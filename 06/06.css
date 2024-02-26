@@ -1,0 +1,19 @@
+img {
+    display: inline-flex;
+    margin: 10px; 
+  }
+  
+p {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+  button { 
+    height: 40px;
+    background-color: dodgerblue;
+    color: white;
+    border: 0px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
