@@ -1,8 +1,6 @@
 const handleClick = (n) => {
     // 1. 버튼 클릭
     // 2. 버튼 클릭시 이미지 변경
-
-    let msg;
     const rnd = Math.floor(Math.random() * 6) + 1;
   
     const img1 = document.querySelector("#img1");
