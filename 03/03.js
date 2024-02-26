@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const bt3Txt = document.createTextNode("버튼3");
     const bt4Txt = document.createTextNode("버튼4");
 
-    bt3.setAttribute("id", "bt3", "bt4");
+    // bt3.setAttribute("id", "bt3", "bt4");
     bt3.appendChild(bt3Txt);
     bt4.appendChild(bt4Txt);
 
