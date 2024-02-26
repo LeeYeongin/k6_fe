@@ -30,7 +30,12 @@ document.addEventListener("DOMContentLoaded", () => {
         handleChange(sel2, sel1, labels[1], labels[0]);
     })
 
-    // txt1.addEventListener("change", () => {
-    //     console.log(txt1.value)
-    // })
+    // txt1의 값이 변경되면 선택된 label값("℃", "℉"에 따라 계산하여 txt2에 출력)
+    txt1.addEventListener("change", () => {
+        console.log(txt1.value);
+        if(sel1.value === "℃")
+            txt2.value = (txt1.value * (9/5)) + 32;
+        else
+            txt2.value = (txt1.value-32) * (5/9);
+    })
 })
