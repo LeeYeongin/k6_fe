@@ -2,7 +2,7 @@ const handleChange = (s1, s2, lb1, lb2, t1, t2) => {
     // txt값들 초기화
     t1.value = '';
     t2.value = '';
-    t1.focus();
+    t1.focus(); // t1으로 커서 위치 이동
 
     if(s1.value === "℃"){
         s2.value = "℉";
