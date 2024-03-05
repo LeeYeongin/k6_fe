@@ -9,21 +9,29 @@ document.addEventListener("DOMContentLoaded", () => {
     let n; // undefined(?)
     let flag = false;
 
+    // input focus
+    numInput.focus();
+
     // 버튼의 클릭이벤트 달기
-    bt.addEventListener("click", (e)=>{
+    bt.addEventListener("click", (e) => {
         e.preventDefault();
         // 랜덤수 생성
         // if (flag == false) {
         if (!flag) {
-            n = Math.floor(Math.random()*100+1); //1~100까지
+            n = Math.floor(Math.random() * 100 + 1); //1~100까지
             flag = true;
+
+            numInput.style.display = "inline";
+            numInput.value = "";
+            numInput.focus();
             bt.innerHTML = "확인";
+
             upDownImg.setAttribute("src", "./img/what.png");
             console.log("n=", n);
         }
 
         // input 박스 내용 가져오기
-        if (numInput.value == ""){
+        if (numInput.value == "") {
             msg.innerHTML = "<sapne>숫자를 입력하세요.</span>";
             // alert("숫자를 입력하세요.");
             numInput.focus();
@@ -35,7 +43,8 @@ document.addEventListener("DOMContentLoaded", () => {
         if (n === parseInt(numInput.value)) {
             // msg.innerHTML = "<sapne>정답입니다.</span>";
             upDownImg.setAttribute("src", "./img/good.png");
-            bt.innerHTML = "다시";
+            numInput.style.display = "none";
+            bt.innerHTML = "재시작";
             flag = false;
         }
         else if (n > numInput.value) {
@@ -46,8 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
             // msg.innerHTML = "<sapne>DOWN</span>"
             upDownImg.setAttribute("src", "./img/down.png");
         }
-        numInput.value = "";
-        numInput.focus();
     })
 
 })
