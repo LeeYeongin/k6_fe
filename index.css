@@ -61,6 +61,10 @@ section > h1 {
     padding: 20px;
     justify-content: center;
     align-items: center;
+    border: 1px dotted grey;
+    width: 80%;
+    background-color: rgb(230, 241, 245);
+    margin-top: 10px;
 }
 
 section > div {
