@@ -17,6 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!flag) {
             n = Math.floor(Math.random()*100+1); //1~100까지
             flag = true;
+            bt.innerHTML = "확인";
+            upDownImg.setAttribute("src", "./img/what.png");
             console.log("n=", n);
         }
 
@@ -33,6 +35,8 @@ document.addEventListener("DOMContentLoaded", () => {
         if (n === parseInt(numInput.value)) {
             // msg.innerHTML = "<sapne>정답입니다.</span>";
             upDownImg.setAttribute("src", "./img/good.png");
+            bt.innerHTML = "다시";
+            flag = false;
         }
         else if (n > numInput.value) {
             // msg.innerHTML = "<sapne>UP</span>"
@@ -42,6 +46,8 @@ document.addEventListener("DOMContentLoaded", () => {
             // msg.innerHTML = "<sapne>DOWN</span>"
             upDownImg.setAttribute("src", "./img/down.png");
         }
+        numInput.value = "";
+        numInput.focus();
     })
 
 })
