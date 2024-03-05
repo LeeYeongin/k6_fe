@@ -74,3 +74,8 @@ for(let [k,v] of Object.entries(obj)){  // 구조 분해
     console.log("오브젝트 키: ", k);
     console.log("오브젝트 값: ", v);
 }
+
+console.log("오브젝트 키 배열: ", Object.keys(obj));
+console.log("오브젝트 키 배열: ", Object.values(obj));
+let arr3 = Object.keys(obj).map((k) => k + obj[k]);
+console.log("arr3: ", arr3);
