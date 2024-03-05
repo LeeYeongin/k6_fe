@@ -15,6 +15,20 @@ document.addEventListener("DOMContentLoaded", () => {
     // 버튼의 클릭이벤트 달기
     bt.addEventListener("click", (e) => {
         e.preventDefault();
+        // input 박스 내용 가져오기
+        if (numInput.value == "") {
+            msg.innerHTML = "<span>숫자를 입력하세요.<span>";
+            // alert("숫자를 입력하세요.");
+            numInput.focus();
+            return; // 아래코드가 더 실행되지 않음
+        }
+
+        if (numInput.value < 1 || numInput.value > 100) {
+            msg.innerHTML = "<span>1에서 100까지 숫자만 입력하세요.<span>";
+            // alert("숫자를 입력하세요.");
+            numInput.focus();
+            return; // 아래코드가 더 실행되지 않음
+        }
         // 랜덤수 생성
         // if (flag == false) {
         if (!flag) {
@@ -30,20 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log("n=", n);
         }
 
-        // input 박스 내용 가져오기
-        if (numInput.value == "") {
-            msg.innerHTML = "<span>숫자를 입력하세요.<span>";
-            // alert("숫자를 입력하세요.");
-            numInput.focus();
-            return; // 아래코드가 더 실행되지 않음
-        }
-
-        if (numInput.value < 1 || numInput.value > 100) {
-            msg.innerHTML = "<span>1에서 100까지 숫자만 입력하세요.<span>";
-            // alert("숫자를 입력하세요.");
-            numInput.focus();
-            return; // 아래코드가 더 실행되지 않음
-        }
 
         msg.innerHTML = " "
         // 숫자비교
