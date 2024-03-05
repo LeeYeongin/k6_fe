@@ -32,7 +32,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // input 박스 내용 가져오기
         if (numInput.value == "") {
-            msg.innerHTML = "<sapne>숫자를 입력하세요.</span>";
+            msg.innerHTML = "<span>숫자를 입력하세요.<span>";
+            // alert("숫자를 입력하세요.");
+            numInput.focus();
+            return; // 아래코드가 더 실행되지 않음
+        }
+
+        if (numInput.value < 1 || numInput.value > 100) {
+            msg.innerHTML = "<span>1에서 100까지 숫자만 입력하세요.<span>";
             // alert("숫자를 입력하세요.");
             numInput.focus();
             return; // 아래코드가 더 실행되지 않음
@@ -41,18 +48,18 @@ document.addEventListener("DOMContentLoaded", () => {
         msg.innerHTML = " "
         // 숫자비교
         if (n === parseInt(numInput.value)) {
-            // msg.innerHTML = "<sapne>정답입니다.</span>";
+            // msg.innerHTML = "<span>정답입니다.<span>";
             upDownImg.setAttribute("src", "./img/good.png");
             numInput.style.display = "none";
             bt.innerHTML = "재시작";
             flag = false;
         }
         else if (n > numInput.value) {
-            // msg.innerHTML = "<sapne>UP</span>"
+            // msg.innerHTML = "<span>UP<span>"
             upDownImg.setAttribute("src", "./img/up.png");
         }
         else {
-            // msg.innerHTML = "<sapne>DOWN</span>"
+            // msg.innerHTML = "<span>DOWN<span>"
             upDownImg.setAttribute("src", "./img/down.png");
         }
     })
