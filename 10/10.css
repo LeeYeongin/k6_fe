@@ -1,7 +1,16 @@
 section > div {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
+    font-size: large;
+    font-weight: bold;
+    
+}
+
+#numDisp {
+    margin: 20px 10px;
 }
 
 button {
@@ -12,14 +21,40 @@ button {
     background-color: cornflowerblue;
     border: none;
     border-radius: 5px;
-    margin: 20px;
+    margin: 10px;
 }
 
-span {
-    background-color: chocolate;
-    width: 10px;
-    height: 10px;
-    padding: 10px;
-    margin: 10px;
+section span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
+    margin: 5px;
+    
+    font-weight: bold;
+}
+
+.sp0 {
+    background-color: tomato;
+    color: white;
+}
+
+.sp1 {
+    background-color: lightskyblue;
+    color: white;
+}
+.sp2 {
+    background-color: goldenrod;
+    color: white;
+}
+.sp3 {
+    background-color: yellowgreen;
+    color: white;
+}
+.sp4 {
+    background-color: steelblue;
+    color: white;
 }
